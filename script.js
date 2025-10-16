@@ -66,21 +66,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     
     if ('IntersectionObserver' in window) {
+        // Set initial state for cards
+        projectCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+        });
+        
         const cardObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '0';
-                    entry.target.style.transform = 'translateY(20px)';
-                    
                     // Respect user's motion preferences
                     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                     
                     if (!prefersReducedMotion) {
-                        setTimeout(() => {
-                            entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }, 100);
+                        entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
                     } else {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
@@ -93,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             threshold: 0.1
         });
         
-        projectCards.forEach((card, index) => {
+        projectCards.forEach(card => {
             cardObserver.observe(card);
         });
     }
