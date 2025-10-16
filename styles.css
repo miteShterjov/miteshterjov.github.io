@@ -184,7 +184,9 @@ textarea:focus {
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Only apply hover effect after card is visible */
+/* Only apply hover effect after card is visible or when animations are not enabled */
+/* Applies to: 1) Cards that completed animation (.card-visible) 
+               2) Cards when IntersectionObserver is not supported (no animation classes) */
 .project-card.card-visible:hover,
 .project-card:not(.card-hidden):not(.card-visible):hover {
     transform: translateY(-5px);
