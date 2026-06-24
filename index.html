@@ -1,9 +1,639 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>This will be my portfolio page?!</p>
-<p>Yay!</p>
-<p>Now onlyto find teh time to make a propper page to show of my kung fu lol.</p>
-</body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mite Shterjov | Unity Developer & Gameplay Programmer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Mite Shterjov is a Unity gameplay programmer specializing in C#, gameplay systems, AI, and interactive mechanics."
+        />
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+    <body class=" ">
+        <div class="nav-container">
+            <nav class="bar bar--sm bar--dark fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal d-flex justify-content-center">
+                                    <li><a href="#projects" class="color--white">Projects</a></li>
+                                    <li><a href="#about" class="color--white">About</a></li>
+                                    <li><a href="#experience" class="color--white">Experience</a></li>
+                                    <li><a href="#github" class="color--white">GitHub</a></li>
+                                    <li><a href="#contact" class="color--white">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <a id="start"></a>
+        <div class="main-container">
+            <section class="cover height-100 imagebg text-center" data-overlay="7">
+                <div class="background-image-holder"><img alt="background" src="img/heroCover.png" /></div>
+                <div class="container pos-vertical-center">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-10 col-lg-8">
+                            <div class="mb-3">
+                                <img
+                                    alt="Mite Shterjov Profile Picture"
+                                    src="img/avatar.jpg"
+                                    style="
+                                        width: 130px;
+                                        height: 130px;
+                                        object-fit: cover;
+                                        border-radius: 50%;
+                                        border: 3px solid rgba(255, 255, 255, 0.3);
+                                    "
+                                />
+                            </div>
+                            <h1 class="color--white mb-1">Mite Shterjov</h1>
+                            <h4 class="type--uppercase type--bold color--primary-2 mb-3">
+                                Unity Developer <span class="color--white px-2">|</span> Gameplay Programmer
+                                <span class="color--white px-2">|</span> Unity Certified
+                            </h4>
+                            <p class="lead color--white mb-4">
+                                Unity gameplay programmer focused on C#, gameplay systems, and building clean,
+                                functional mechanics.
+                            </p>
+                            <div class="mt-4">
+                                <a
+                                    class="btn btn--primary-2 type--uppercase"
+                                    href="https://miteshterjov.itch.io/"
+                                    target="_blank"
+                                    ><span class="btn__text"> View Projects </span></a
+                                ><a
+                                    class="btn btn--primary-2 type--uppercase"
+                                    href="docs/Mite-Shterjov-CV.pdf"
+                                    target="_blank"
+                                    ><span class="btn__text"> Download CV </span></a
+                                >
+                            </div>
+                            <div class="mt-4">
+                                <ul class="social-list list-inline list--hover">
+                                    <li>
+                                        <a href="https://github.com/miteShterjov/" target="_blank" aria-label="GitHub"
+                                            ><i class="socicon socicon-github icon icon--sm color--white"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://mk.linkedin.com/in/mite-shterjov-67397b321"
+                                            target="_blank"
+                                            aria-label="LinkedIn"
+                                            ><i class="socicon socicon-linkedin icon icon--sm color--white"></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://miteshterjov.itch.io" target="_blank" aria-label="Itch"
+                                            ><i class="icon icon-Gamepad icon--sm color--white"></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--dark space--md" id="projects">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-sm-12 text-center">
+                            <span class="type--uppercase type--bold color--primary-2">Portfolio</span>
+                            <h2 class="color--white mb-2">Featured Projects</h2>
+                            <p class="lead color--white-70">
+                                Showcasing gameplay systems, scalable mechanics, and modular C# architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-7 mb-4 mb-md-0">
+                            <div class="slider-wrapper" style="position: relative; width: 100%; overflow: hidden">
+                                <div class="slider" data-paging="true">
+                                    <ul class="slides">
+                                        <li><img alt="Project" src="img/enchanted/1.png" /></li>
+                                        <li><img alt="Project" src="img/enchanted/2.png" /></li>
+                                        <li><img alt="Project" src="img/enchanted/3.png" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <span class="label bg--primary-2 color--white mb-3">Main Project</span>
+                            <h3 class="color--white mb-1" style="text-align: center">Enchanted Forest</h3>
+                            <p class="type--bold color--white-70 mb-3">
+                                2D Adventure <span class="color--white px-2">|</span> RPG
+                                <span class="color--white px-2">|</span> Pixel Art
+                                <span class="color--white px-2">|</span> Top-Down
+                            </p>
+                            <p class="color--white-70 mb-3">
+                                A 2D top-down adventure project focused on combat systems, weapon actions, enemy AI
+                                behaviors, and level-driven exploration.
+                            </p>
+                            <p class="color--white-70 mb-3">
+                                <b>Features:</b> smooth 2D movement system, enemy AI with patrol & chase behaviour,
+                                simple combat / interaction system, level-based exploration.
+                            </p>
+                            <p class="color--white-70 mb-3">
+                                <b>Built with:</b> Unity (C#), rigidbody-based movement, state-based enemy AI, basic
+                                level design system.
+                            </p>
+                            <h6 class="color--white mb-1">Biggest Technical Challenge:</h6>
+                            <p class="color--white-70 type--sm mb-4" style="line-height: 1.5">
+                                Building a scalable weapon action system and designing the end-boss AI, including attack
+                                patterns, state transitions, and combat logic.
+                            </p>
+                            <p class="color--white-70 type--sm mb-4" style="line-height: 1.5">
+                                Status: Personal project / Portfolio piece
+                            </p>
+                            <div>
+                                <a
+                                    class="btn btn--primary-2 btn--sm type--uppercase mr-2"
+                                    href="https://miteshterjov.itch.io/enchanted-forest"
+                                    target="_blank"
+                                    ><span class="btn__text">Play on Itch.io</span></a
+                                ><a
+                                    class="btn btn--primary-2 btn--sm type--uppercase"
+                                    href="https://github.com/miteShterjov/enchanted-forest"
+                                    target="_blank"
+                                    ><span class="btn__text"
+                                        ><i class="socicon socicon-github mr-1"></i> Source Code</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5 mb-5 border--white-10" />
+                    <div class="row">
+                        <div class="col-sm-12 text-center mb-4"><h3 class="color--white">Additional Projects</h3></div>
+                        <div class="col-sm-12">
+                            <div class="tabs-container tabs--dark" data-content-align="center">
+                                <ul class="tabs center" style="justify-content: center; margin-left: 25%">
+                                    <li class="active">
+                                        <div class="tab__title text-center">
+                                            <span class="h5 color--white">Pixel Adventure</span>
+                                        </div>
+                                        <div class="tab__content">
+                                            <div class="row align-items-center mt-4">
+                                                <div class="col-md-5 mb-4 mb-md-0">
+                                                    <h4 class="color--white mb-1">Pixel Adventure</h4>
+                                                    <p class="type--bold color--primary mb-3">
+                                                        2D <span class="color--white px-2">|</span> Maze Runner
+                                                    </p>
+                                                    <p class="color--white-70 mb-3">
+                                                        This project was built to improve my Unity skills, focusing on
+                                                        gameplay systems, player control responsiveness, and level
+                                                        design flow.
+                                                    </p>
+                                                    <p class="color--white-70 type--sm mb-4">
+                                                        Gameplay Overview: tight 2D platforming controls, enemy
+                                                        encounters and simple combat interactions, level-based
+                                                        progression with increasing difficulty, focus on movement feel
+                                                        and timing.
+                                                    </p>
+                                                    <p class="color--white-70 type--sm mb-4" style="line-height: 1.5">
+                                                        Status: Personal project / Portfolio piece
+                                                    </p>
+                                                    <div>
+                                                        <a
+                                                            class="btn btn--primary-2 btn--sm type--uppercase mr-2"
+                                                            href="https://miteshterjov.itch.io/pixel-adventure"
+                                                            target="_blank"
+                                                            ><span class="btn__text">Play</span></a
+                                                        ><a
+                                                            class="btn btn--primary-2 btn--sm type--uppercase"
+                                                            href="https://github.com/miteShterjov/Pixel-Adventure"
+                                                            target="_blank"
+                                                            ><span class="btn__text"
+                                                                ><i class="socicon socicon-github mr-1"></i> Code</span
+                                                            ></a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div
+                                                        class="slider-wrapper"
+                                                        style="position: relative; width: 100%; overflow: hidden"
+                                                    >
+                                                        <div class="slider" data-paging="true">
+                                                            <ul class="slides">
+                                                                <li>
+                                                                    <img alt="Project" src="img/enchanted/11.png" />
+                                                                </li>
+                                                                <li>
+                                                                    <img alt="Project" src="img/enchanted/12.png" />
+                                                                </li>
+                                                                <li>
+                                                                    <img alt="Project" src="img/enchanted/13.png" />
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab__title text-center">
+                                            <span class="h5 color--white">Space Defender</span>
+                                        </div>
+                                        <div class="tab__content">
+                                            <div class="row align-items-center mt-4">
+                                                <div class="col-md-5 mb-4 mb-md-0">
+                                                    <h4 class="color--white mb-1">Space Defender</h4>
+                                                    <p class="type--bold color--primary mb-3">
+                                                        2D <span class="color--white px-2">|</span> Space Shooter<span
+                                                            class="color--white px-2"
+                                                            >|</span
+                                                        >Top Down
+                                                    </p>
+                                                    <p class="color--white-70 mb-3">
+                                                        Space Defender is my first complete Unity prototype — a classic
+                                                        arcade-style space shooter focused on learning core gameplay
+                                                        loops, shooting mechanics, and enemy spawning systems.
+                                                    </p>
+                                                    <p class="color--white-70 type--sm mb-4">
+                                                        Core gameplay loop: survive waves of enemies, shoot and avoid
+                                                        incoming attacks, increase score over time,try to survive as
+                                                        long as possible.
+                                                    </p>
+                                                    <p class="color--white-70 type--sm mb-4">
+                                                        What I learned: player movement & input handling, enemy spawning
+                                                        systems, collision detection in Unity, basic game loop
+                                                        structure, simple scoring system implementation.
+                                                    </p>
+                                                    <p class="color--white-70 type--sm mb-4" style="line-height: 1.5">
+                                                        Status: Personal project / Portfolio piece
+                                                    </p>
+                                                    <div>
+                                                        <a
+                                                            class="btn btn--primary-2 btn--sm type--uppercase mr-2"
+                                                            href="https://miteshterjov.itch.io/space-defender"
+                                                            target="_blank"
+                                                            ><span class="btn__text">Play</span></a
+                                                        ><a
+                                                            class="btn btn--primary-2 btn--sm type--uppercase"
+                                                            href="https://github.com/miteShterjov/Space-Defender"
+                                                            target="_blank"
+                                                            ><span class="btn__text"
+                                                                ><i class="socicon socicon-github mr-1"></i> Code</span
+                                                            ></a
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <img
+                                                        alt="Platformer"
+                                                        src="img/enchanted/111.png"
+                                                        class="border--round box-shadow-wide"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--dark space--md" id="about">
+                <div class="container">
+                    <div class="row justify-content-between mb-5">
+                        <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                            <span class="type--uppercase type--bold color--primary-2">Behind The Code</span>
+                            <h2 class="color--white mt-2 mb-4">About Me</h2>
+                            <p class="lead color--white-70">
+                                I’m a programmer and certified Unity Developer focused on gameplay systems, AI behavior,
+                                and scalable game architecture.
+                            </p>
+                            <p class="color--white-70">
+                                My software engineering background and studying game systems give me an analytical
+                                approach to gameplay design and system architecture.
+                            </p>
+                            <p class="color--white-70">
+                                Currently, I am fully transitioning into professional game development and am actively
+                                seeking new opportunities—both remote and within Europe.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div
+                                class="border--round box-shadow-wide p-4 text-center h-100 d-flex flex-column justify-content-center"
+                                style="background: rgba(255, 255, 255, 0.05)"
+                            >
+                                <h5 class="color--white mb-4">
+                                    <i class="icon icon-Medal color--primary-2 mr-2"></i> Verified Certifications
+                                </h5>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a
+                                        href="https://www.credly.com/badges/19f7df07-e3bc-4dcc-8792-4a580775767e/linked_in_profile"
+                                        target="_blank"
+                                        class="mr-3"
+                                        style="display: inline-block; transition: transform 0.2s"
+                                        onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'"
+                                        ><img
+                                            alt="Unity Certified User: Programmer"
+                                            src="img/cert.png"
+                                            style="width: 110px; height: 110px; object-fit: contain" /></a
+                                    ><a
+                                        href="https://www.credly.com/badges/d8445c60-ff00-49d4-b47e-0936c22d41f5/linked_in_profile"
+                                        target="_blank"
+                                        style="display: inline-block; transition: transform 0.2s"
+                                        onmouseover="this.style.transform='scale(1.05)'"
+                                        onmouseout="this.style.transform='scale(1)'"
+                                        ><img
+                                            alt="Unity Certified Junior Developer"
+                                            src="img/unity.png"
+                                            style="width: 110px; height: 110px; object-fit: contain"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-4 mb-5 border--white-10" />
+                    <div class="row">
+                        <div class="col-sm-12 text-center mb-4"><h3 class="color--white">Core Competencies</h3></div>
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="border--round box-shadow-wide p-4 h-100"
+                                style="background: rgba(255, 255, 255, 0.05)"
+                            >
+                                <h5 class="color--primary-2 mb-3">
+                                    <i class="icon icon-Code-Window mr-2"></i> Programming
+                                </h5>
+                                <ul class="list-unstyled color--white-70 type--bold">
+                                    <li class="mb-2">C# and .NET</li>
+                                    <li class="mb-2">Unity Engine</li>
+                                    <li class="mb-2">OOP (Object-Oriented Programming)</li>
+                                    <li class="mb-2">Design Patterns</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="border--round box-shadow-wide p-4 h-100"
+                                style="background: rgba(255, 255, 255, 0.05)"
+                            >
+                                <h5 class="color--primary-2 mb-3">
+                                    <i class="icon icon-Gamepad mr-2"></i> Technical Highlights
+                                </h5>
+                                <ul class="list-unstyled color--white-70 type--bold">
+                                    <li class="mb-2">Gameplay Systems</li>
+                                    <li class="mb-2">State Machines</li>
+                                    <li class="mb-2">Enemy AI</li>
+                                    <li class="mb-2">UI Systems</li>
+                                    <li class="mb-2">Save Systems</li>
+                                    <li class="mb-2">Inventory Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div
+                                class="border--round box-shadow-wide p-4 h-100"
+                                style="background: rgba(255, 255, 255, 0.05)"
+                            >
+                                <h5 class="color--primary-2 mb-3"><i class="icon icon-Box-Open mr-2"></i> Tools</h5>
+                                <ul class="list-unstyled color--white-70 type--bold">
+                                    <li class="mb-2">Unity</li>
+                                    <li class="mb-2">JetBrains Rider</li>
+                                    <li class="mb-2">GitHub</li>
+                                    <li class="mb-2">Blender</li>
+                                    <li class="mb-2">Aseprite</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--dark space--md" id="experience">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-sm-12 text-center">
+                            <span class="type--uppercase type--bold color--primary-2">Career</span>
+                            <h2 class="color--white mb-2">Professional Experience</h2>
+                            <p class="lead color--white-70">
+                                A foundation in software engineering, technical infrastructure, and web-based systems
+                                architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row mb-5">
+                                <div class="col-md-3 mb-2 mb-md-0">
+                                    <p class="type--bold color--white mb-0">Present</p>
+                                    <span class="color--white-70 type--sm">Independent</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="color--white mb-1">Unity Game Developer</h4>
+                                    <p class="color--primary-2 type--bold mb-3">
+                                        Portfolio Development & Systems Architecture
+                                    </p>
+                                    <p class="color--white-70 mb-3">
+                                        Actively building a portfolio of systems-driven game projects. Focused on
+                                        implementing clean C# architecture, finite state machines, and procedural
+                                        workflows in Unity to create modular, scalable gameplay mechanics.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-3 mb-2 mb-md-0">
+                                    <p class="type--bold color--white mb-0">2019 - 2025</p>
+                                    <span class="color--white-70 type--sm">Aliance RE</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="color--white mb-1">Content Editor & Digital Marketing Officer</h4>
+                                    <p class="color--primary-2 type--bold mb-3">Content Strategy & Audience Analysis</p>
+                                    <p class="color--white-70 mb-3">
+                                        Developed and executed complex digital strategies across multiple platforms.
+                                        This role refined my ability to analyze user behavior data—a core skill in game
+                                        design—to iterate on content and drive player engagement.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-3 mb-2 mb-md-0">
+                                    <p class="type--bold color--white mb-0">2014 - 2019</p>
+                                    <span class="color--white-70 type--sm">Erak Grup DOO</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="color--white mb-1">Senior IT Officer / Web Developer</h4>
+                                    <p class="color--primary-2 type--bold mb-3">Systems Design & Web Architecture</p>
+                                    <p class="color--white-70 mb-3">
+                                        Developed company ecosystems using WordPress and the
+                                        <strong>Laravel Framework</strong>. Architecting full-stack web solutions
+                                        provided deep experience in OOP, database management, and site performance
+                                        optimization—foundational logic used today in managing complex game states.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-3 mb-2 mb-md-0">
+                                    <p class="type--bold color--white mb-0">2014 - 2017</p>
+                                    <span class="color--white-70 type--sm">MTarget Skopje</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="color--white mb-1">Web Developer</h4>
+                                    <p class="color--primary-2 type--bold mb-3">
+                                        E-commerce & Technical Infrastructure
+                                    </p>
+                                    <p class="color--white-70 mb-3">
+                                        Engineered e-commerce platforms using WordPress and PrestaShop. Managed
+                                        technical integrations and optimized ad-campaign performance, bridging the gap
+                                        between front-end UI/UX and back-end system reliability.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-3 mb-2 mb-md-0">
+                                    <p class="type--bold color--white mb-0">2014</p>
+                                    <span class="color--white-70 type--sm">Stopanska Banka AD</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="color--white mb-1">IT Support Officer</h4>
+                                    <p class="color--primary-2 type--bold mb-3">Infrastructure & System Reliability</p>
+                                    <p class="color--white-70 mb-3">
+                                        Diagnosed critical software/hardware issues and managed Active Directory
+                                        environments in a high-stakes banking setting. This role instilled a
+                                        disciplined, professional approach to debugging, system maintenance, and
+                                        cross-departmental communication.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--dark space--sm" id="github">
+                <div class="container">
+                    <div class="row mb-5 text-center">
+                        <div class="col-sm-12">
+                            <h2 class="color--white">Code & Systems</h2>
+                            <p class="lead color--white-70">
+                                Curated repositories showcasing architecture, C# best practices, and gameplay logic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-md-5 mb-4">
+                            <img
+                                src="https://github-readme-stats.vercel.app/api?username=miteShterjov&show_icons=true&theme=radical&hide_border=true&count_private=true"
+                                alt="Mite's GitHub Stats"
+                                style="width: 100%; border-radius: 8px"
+                            />
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-sm-6 mb-4">
+                                    <div class="border--round p-3" style="background: rgba(255, 255, 255, 0.05)">
+                                        <h6 class="color--primary mb-1">Enchanted Forest</h6>
+                                        <p class="type--sm color--white-70 mb-2">
+                                            Main RPG project featuring finite state machines and custom AI logic.
+                                        </p>
+                                        <a
+                                            href="https://github.com/miteShterjov/enchanted-forest"
+                                            class="color--white type--bold type--sm"
+                                            >View Repo →</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <div class="border--round p-3" style="background: rgba(255, 255, 255, 0.05)">
+                                        <h6 class="color--primary mb-1">Unity-Systems-Lib</h6>
+                                        <p class="type--sm color--white-70 mb-2">
+                                            Core C# scripts: Object Pooling, Save/Load systems, and modular input
+                                            handling.
+                                        </p>
+                                        <a
+                                            href="https://github.com/miteShterjov/"
+                                            class="color--white type--bold type--sm"
+                                            >View Repo →</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 text-center">
+                            <h5 class="color--white mb-4">Activity Overview</h5>
+                            <img
+                                src="https://ghchart.rshah.org/miteShterjov"
+                                alt="Mite's GitHub Calendar"
+                                style="width: 100%; max-width: 800px; border-radius: 8px"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--primary-2 space--sm text-center" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="color--white mb-4">Contact</h3>
+                            <ul class="list-inline list--hover">
+                                <li class="list-inline-item mx-3">
+                                    <a href="mailto:mite.shterjov@gmail.com" class="color--white"
+                                        ><i class="socicon socicon-mail icon--xs"></i
+                                        ><span class="type--uppercase type--bold ml-2">Email Me</span></a
+                                    >
+                                </li>
+                                <li class="list-inline-item mx-3">
+                                    <a href="https://github.com/miteShterjov/" target="_blank" class="color--white"
+                                        ><i class="socicon socicon-github icon icon--xs"></i
+                                        ><span class="type--uppercase type--bold ml-2">GitHub</span></a
+                                    >
+                                </li>
+                                <li class="list-inline-item mx-3">
+                                    <a
+                                        href="https://mk.linkedin.com/in/mite-shterjov-67397b321"
+                                        target="_blank"
+                                        class="color--white"
+                                        ><i class="socicon socicon-linkedin icon icon--xs"></i
+                                        ><span class="type--uppercase type--bold ml-2">LinkedIn</span></a
+                                    >
+                                </li>
+                                <li class="list-inline-item mx-3">
+                                    <a href="https://miteshterjov.itch.io/" target="_blank" class="color--white"
+                                        ><i class="icon icon-Gamepad icon--sm"></i
+                                        ><span class="type--uppercase type--bold ml-2">Itch.io</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

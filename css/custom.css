@@ -1,0 +1,71 @@
+.flickity-enabled .flickity-page-dots {
+    /* Current position was 15px, changing to -15px moves it down 30px */
+    bottom: -15px !important;
+    position: absolute !important;
+    width: 100% !important;
+    text-align: center !important;
+    z-index: 20 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Force the navbar to remain static and dark */
+.bar--dark {
+    background: #252525 !important; /* Adjust to match your exact dark color */
+    position: relative !important;
+}
+
+/* Force links to always remain white and clean */
+.menu-horizontal > li > a {
+    color: #ffffff !important;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.menu-horizontal > li > a:hover {
+    opacity: 1 !important;
+}
+
+/* Ensure the module fills the width to allow for true centering */
+.bar__module {
+    width: 100%;
+}
+/* Fix the navbar to the top */
+.fixed-top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000 !important;
+}
+
+/* IMPORTANT: Add padding to the top of your body so content isn't hidden behind the fixed nav */
+body {
+    padding-top: 60px; /* Adjust this value based on your actual navbar height */
+}
+/* Remove the default border and shadow from the Stack bar */
+.bar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+/* 1. Remove any potential borders or shadows from the nav elements */
+.nav-container,
+.bar {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* 2. Remove the top padding we added earlier if it is causing a visual gap */
+body {
+    padding-top: 0 !important;
+}
+
+/* 3. If there is still a line, it might be a 'border-bottom' on the row or container */
+.bar .container,
+.bar .row {
+    border: none !important;
+}
